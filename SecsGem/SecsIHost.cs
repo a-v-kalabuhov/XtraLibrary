@@ -7,8 +7,7 @@ using System.Collections;
 
 namespace XtraLibrary.SecsGem
 {
-    public class SecsIHost
-        :SecsHost
+    public class SecsIHost: SecsHost
     {
 
         public event SecsIConnectionChangedEventHandler ConnectionChanged;
