@@ -5,7 +5,9 @@ VisualStudioVersion = 17.2.32526.322
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XtraLibrary", "XtraLibrary.csproj", "{4C1D8AAA-F229-4058-9BEF-E0041DF1F9BF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XtraLibraryTest", "..\XtraLibraryTest\XtraLibraryTest.csproj", "{B583191E-6556-4441-89ED-5AB2F8D8F678}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Demo", "Demo", "{FDE6DEF1-C05B-444A-9202-BF00FBC5B5AF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XtraLibraryDemo", "Demo\XtraLibraryDemo.csproj", "{B583191E-6556-4441-89ED-5AB2F8D8F678}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -42,6 +44,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B583191E-6556-4441-89ED-5AB2F8D8F678} = {FDE6DEF1-C05B-444A-9202-BF00FBC5B5AF}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {30C594AF-AC9E-4728-8F0A-2D133CF25F99}
