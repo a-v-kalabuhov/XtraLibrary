@@ -111,6 +111,18 @@ namespace XtraLibraryDemo
                     Console.WriteLine($"Sent Answer: S{answer.Stream}F{answer.Function}");
                 }
                 else
+                if ((e.Primary.Stream == 1) && (e.Primary.Function == 13))
+                {
+                    var answer = new SecsMessage(1, 14, false);
+                    answer.Items.Add(new SecsItemBinary("B", new byte[] { 0x00 }));
+                    var list = new SecsItemList("L");
+                    list.AddItem(new SecsItemAscii("A1", "0"));
+                    list.AddItem(new SecsItemAscii("A1", "0"));
+                    answer.Items.Add(list);
+                    host.Reply(e.Primary, answer);
+                    Console.WriteLine($"Sent Answer: S{answer.Stream}F{answer.Function}");
+                }
+                else
                 {
                     host.Reply_AbortMessage(e.Primary);
                     Console.WriteLine("Sent Answer: Abort");
